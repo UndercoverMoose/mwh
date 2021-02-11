@@ -8,7 +8,7 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 50vw;
+  width: 33.5vw;
   height: 10vh;
   background: white;
   font-size: 4vh;
@@ -17,8 +17,18 @@
 .btn-text {
   position: fixed;
   top: 0px;
+  left: 33.5vw;
+  width: 33vw;
+  height: 10vh;
+  background: white;
+  font-size: 4vh;
+  border: none;
+}
+.btn-img {
+  position: fixed;
+  top: 0px;
   right: 0px;
-  width: 50vw;
+  width: 33.5vw;
   height: 10vh;
   background: white;
   font-size: 4vh;
@@ -41,4 +51,28 @@ c {
   font-weight: bold;
   text-align: center;
   width: 100vw;
+}
+.h {
+  width: 24.5vw;
+}
+.h:hover {
+  cursor: pointer;
+}
+.hover {
+  z-index: 999;
+  display: none;
+  border: 5px solid black;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+}
+.cover {
+  z-index: 998;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: rgba(255, 255, 255, 0.75);
 }
