@@ -2,13 +2,92 @@ window.onload = function() {
   document.getElementsByClassName("btn-notes")[0].addEventListener("click", (e) => {
     e.target.className = "btn-notes active";
     document.getElementsByClassName("btn-text")[0].className = "btn-text";
+    document.getElementsByClassName("btn-img")[0].className = "btn-img";
     showNotes();
   });
   document.getElementsByClassName("btn-text")[0].addEventListener("click", (e) => {
     e.target.className = "btn-text active";
     document.getElementsByClassName("btn-notes")[0].className = "btn-notes";
+    document.getElementsByClassName("btn-img")[0].className = "btn-img";
     showText();
   });
+  document.getElementsByClassName("btn-img")[0].addEventListener("click", (e) => {
+    e.target.className = "btn-img active";
+    document.getElementsByClassName("btn-text")[0].className = "btn-text";
+    document.getElementsByClassName("btn-notes")[0].className = "btn-notes";
+    showImg();
+  });
+  document.body.addEventListener("click", (e) => {
+    if(e.target.className === "h") {
+      document.getElementsByClassName("hover")[0].src = e.target.src;
+      document.getElementsByClassName("hover")[0].style = "display: block";
+      document.getElementsByClassName("cover")[0].style = "display: block";
+    }else {
+      document.getElementsByClassName("hover")[0].style.display = "none";
+      document.getElementsByClassName("cover")[0].style.display = "none";
+    }
+  });
+}
+function showImg() {
+  document.getElementById("content").innerHTML = `
+  <h1>African Imperialism</h1>
+  <img class="h" src="africanImperialism/paternalism.png"/>
+  <img class="h" src="africanImperialism/whyafrica.png"/>
+  <img class="h" src="africanImperialism/whyafrica2.png"/>
+  <img class="h" src="africanImperialism/africabeforeeuropean.png"/>
+  <img class="h" src="africanImperialism/africabeforeeuropean2.png"/>
+  <img class="h" src="africanImperialism/congoexploration.png"/>
+  <img class="h" src="africanImperialism/congoexploration2.png"/>
+  <img class="h" src="africanImperialism/berlinconference.png"/>
+  <img class="h" src="africanImperialism/europeanimperialmotives.png"/>
+  <img class="h" src="africanImperialism/europeanimperialmotives2.png"/>
+  <img class="h" src="africanImperialism/economicmotives.png"/>
+  <img class="h" src="africanImperialism/politicalmotives.png"/>
+  <img class="h" src="africanImperialism/exploratorationmotives.png"/>
+  <img class="h" src="africanImperialism/imperialism.png"/>
+
+  <br><h1>India Imperialism</h1>
+  <img class="h" src="indiaImperialism/southernafrica.png"/>
+  <img class="h" src="indiaImperialism/why.png"/>
+  <img class="h" src="indiaImperialism/crimeanwar.png"/>
+  <img class="h" src="indiaImperialism/britisheastindiatrade.png"/>
+  <img class="h" src="indiaImperialism/sepoymutiny.png"/>
+  <img class="h" src="indiaImperialism/civildisobedience.png"/>
+  <img class="h" src="indiaImperialism/saltmarchbg.png"/>
+  <img class="h" src="indiaImperialism/saltmarchoutcome.png"/>
+  <img class="h" src="indiaImperialism/saltmarcheffect.png"/>
+  <img class="h" src="indiaImperialism/gandhi.png"/>
+  <img class="h" src="indiaImperialism/hindumuslimrift.png"/>
+  <img class="h" src="indiaImperialism/hindumuslimriftboth.png"/>
+  <img class="h" src="indiaImperialism/selfrule.png"/>
+  <img class="h" src="indiaImperialism/legacy.png"/>
+  <img class="h" src="indiaImperialism/indianindependence.png"/>
+  <img class="h" src="indiaImperialism/gbtakeover.png"/>
+  <img class="h" src="indiaImperialism/imperialisminafrica.png"/>
+
+  <br><h1>Decline of the Qing Dynasty</h1>
+  <img class="h" src="declineQing/decline.png"/>
+  <img class="h" src="declineQing/languages.png"/>
+  <img class="h" src="declineQing/population.png"/>
+  <img class="h" src="declineQing/map.png"/>
+  <img class="h" src="declineQing/qingdynasty.png"/>
+  <img class="h" src="declineQing/chinaspov.png"/>
+  <img class="h" src="declineQing/foreigntrade.png"/>
+  <img class="h" src="declineQing/macartney.png"/>
+  <img class="h" src="declineQing/macartney2.png"/>
+  <img class="h" src="declineQing/treatyofnanjing.png"/>
+  <img class="h" src="declineQing/opiumuse.png"/>
+  <img class="h" src="declineQing/taipingrebllion.png"/>
+  <img class="h" src="declineQing/selfstrength.png"/>
+  <img class="h" src="declineQing/spheres.png"/>
+  <img class="h" src="declineQing/boxer.png"/>
+  <img class="h" src="declineQing/sino.png"/>
+  <img class="h" src="declineQing/extraterritoriality.png"/>
+  <img class="h" src="declineQing/opendoor.png"/>
+
+  <div class="cover"/>
+  <img class="hover" src=""/>
+`;
 }
 function showNotes() {
   document.getElementById("content").innerHTML = `
