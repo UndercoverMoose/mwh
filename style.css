@@ -1,0 +1,44 @@
+* {
+  margin: auto;
+  font-family: Arial;
+  transition: background 0.25s;
+}
+
+.btn-notes {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 50vw;
+  height: 10vh;
+  background: white;
+  font-size: 4vh;
+  border: none;
+}
+.btn-text {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 50vw;
+  height: 10vh;
+  background: white;
+  font-size: 4vh;
+  border: none;
+}
+.active {
+  background: black;
+  color: white;
+}
+button:hover {
+  background: grey;
+  cursor: pointer;
+}
+hr {
+  padding-top: 10vh;
+}
+c {
+  display: block;
+  font-size: 7vh;
+  font-weight: bold;
+  text-align: center;
+  width: 100vw;
+}
